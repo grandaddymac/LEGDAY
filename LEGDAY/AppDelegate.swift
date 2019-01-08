@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        return true
+    }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        guard let intent = userActivity.interaction?.intent as? INStartWorkoutIntent else {
+            print("AppDelegate Start workout intent false")
+            return false
+        }
+        
+        DataService.instance.startWorkoutIntent = intent
+        
+        NotificationCenter.default.post(name: NSNotification.Name("workoutStartedNotification"), object: nil)
+        
+        print("AppDelegate start workout true")
+        print(intent)
         return true
     }
 

@@ -8,24 +8,64 @@
 
 /* Begin PBXBuildFile section */
 		D8EB236F21E40F3100A31BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB236E21E40F3100A31BA8 /* AppDelegate.swift */; };
-		D8EB237121E40F3100A31BA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB237021E40F3100A31BA8 /* ViewController.swift */; };
+		D8EB237121E40F3100A31BA8 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB237021E40F3100A31BA8 /* WorkoutVC.swift */; };
 		D8EB237421E40F3100A31BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EB237221E40F3100A31BA8 /* Main.storyboard */; };
 		D8EB237621E40F3200A31BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8EB237521E40F3200A31BA8 /* Assets.xcassets */; };
 		D8EB237921E40F3200A31BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EB237721E40F3200A31BA8 /* LaunchScreen.storyboard */; };
+		D8EB238721E416B600A31BA8 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB238621E416B600A31BA8 /* IntentHandler.swift */; };
+		D8EB238B21E416B600A31BA8 /* IntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D8EB238421E416B600A31BA8 /* IntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D8EB239421E41C9600A31BA8 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB239321E41C9600A31BA8 /* DataService.swift */; };
+		D8EB239621E41FBB00A31BA8 /* DoubleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB239521E41FBB00A31BA8 /* DoubleExt.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8EB238921E416B600A31BA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8EB236321E40F3100A31BA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EB238321E416B600A31BA8;
+			remoteInfo = IntentHandler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8EB238F21E416B600A31BA8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D8EB238B21E416B600A31BA8 /* IntentHandler.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D8EB236B21E40F3100A31BA8 /* LEGDAY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEGDAY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EB236E21E40F3100A31BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8EB237021E40F3100A31BA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8EB237021E40F3100A31BA8 /* WorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutVC.swift; sourceTree = "<group>"; };
 		D8EB237321E40F3100A31BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8EB237521E40F3200A31BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8EB237821E40F3200A31BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8EB237A21E40F3200A31BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8EB238421E416B600A31BA8 /* IntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EB238621E416B600A31BA8 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		D8EB238821E416B600A31BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8EB239321E41C9600A31BA8 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		D8EB239521E41FBB00A31BA8 /* DoubleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D8EB236821E40F3100A31BA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EB238121E416B600A31BA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				D8EB236D21E40F3100A31BA8 /* LEGDAY */,
+				D8EB238521E416B600A31BA8 /* IntentHandler */,
 				D8EB236C21E40F3100A31BA8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				D8EB236B21E40F3100A31BA8 /* LEGDAY.app */,
+				D8EB238421E416B600A31BA8 /* IntentHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +96,49 @@
 		D8EB236D21E40F3100A31BA8 /* LEGDAY */ = {
 			isa = PBXGroup;
 			children = (
+				D8EB239121E41C5200A31BA8 /* Services */,
+				D8EB239021E41C4600A31BA8 /* Controller */,
+				D8EB239221E41C5900A31BA8 /* Extensions */,
 				D8EB236E21E40F3100A31BA8 /* AppDelegate.swift */,
-				D8EB237021E40F3100A31BA8 /* ViewController.swift */,
 				D8EB237221E40F3100A31BA8 /* Main.storyboard */,
 				D8EB237521E40F3200A31BA8 /* Assets.xcassets */,
 				D8EB237721E40F3200A31BA8 /* LaunchScreen.storyboard */,
 				D8EB237A21E40F3200A31BA8 /* Info.plist */,
 			);
 			path = LEGDAY;
+			sourceTree = "<group>";
+		};
+		D8EB238521E416B600A31BA8 /* IntentHandler */ = {
+			isa = PBXGroup;
+			children = (
+				D8EB238621E416B600A31BA8 /* IntentHandler.swift */,
+				D8EB238821E416B600A31BA8 /* Info.plist */,
+			);
+			path = IntentHandler;
+			sourceTree = "<group>";
+		};
+		D8EB239021E41C4600A31BA8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8EB237021E40F3100A31BA8 /* WorkoutVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D8EB239121E41C5200A31BA8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D8EB239321E41C9600A31BA8 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D8EB239221E41C5900A31BA8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D8EB239521E41FBB00A31BA8 /* DoubleExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +151,34 @@
 				D8EB236721E40F3100A31BA8 /* Sources */,
 				D8EB236821E40F3100A31BA8 /* Frameworks */,
 				D8EB236921E40F3100A31BA8 /* Resources */,
+				D8EB238F21E416B600A31BA8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D8EB238A21E416B600A31BA8 /* PBXTargetDependency */,
 			);
 			name = LEGDAY;
 			productName = LEGDAY;
 			productReference = D8EB236B21E40F3100A31BA8 /* LEGDAY.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D8EB238321E416B600A31BA8 /* IntentHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8EB238C21E416B600A31BA8 /* Build configuration list for PBXNativeTarget "IntentHandler" */;
+			buildPhases = (
+				D8EB238021E416B600A31BA8 /* Sources */,
+				D8EB238121E416B600A31BA8 /* Frameworks */,
+				D8EB238221E416B600A31BA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentHandler;
+			productName = IntentHandler;
+			productReference = D8EB238421E416B600A31BA8 /* IntentHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +191,9 @@
 				ORGANIZATIONNAME = gdm;
 				TargetAttributes = {
 					D8EB236A21E40F3100A31BA8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D8EB238321E416B600A31BA8 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -113,6 +212,7 @@
 			projectRoot = "";
 			targets = (
 				D8EB236A21E40F3100A31BA8 /* LEGDAY */,
+				D8EB238321E416B600A31BA8 /* IntentHandler */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +228,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8EB238221E416B600A31BA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,12 +242,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8EB237121E40F3100A31BA8 /* ViewController.swift in Sources */,
+				D8EB239421E41C9600A31BA8 /* DataService.swift in Sources */,
+				D8EB237121E40F3100A31BA8 /* WorkoutVC.swift in Sources */,
+				D8EB239621E41FBB00A31BA8 /* DoubleExt.swift in Sources */,
 				D8EB236F21E40F3100A31BA8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8EB238021E416B600A31BA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EB238721E416B600A31BA8 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8EB238A21E416B600A31BA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EB238321E416B600A31BA8 /* IntentHandler */;
+			targetProxy = D8EB238921E416B600A31BA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D8EB237221E40F3100A31BA8 /* Main.storyboard */ = {
@@ -281,6 +406,7 @@
 		D8EB237E21E40F3200A31BA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2967PHFU2S;
@@ -299,6 +425,7 @@
 		D8EB237F21E40F3200A31BA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2967PHFU2S;
@@ -309,6 +436,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grandaddymac.LEGDAY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8EB238D21E416B600A31BA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2967PHFU2S;
+				INFOPLIST_FILE = IntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grandaddymac.LEGDAY.IntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8EB238E21E416B600A31BA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2967PHFU2S;
+				INFOPLIST_FILE = IntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grandaddymac.LEGDAY.IntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,6 +496,15 @@
 			buildConfigurations = (
 				D8EB237E21E40F3200A31BA8 /* Debug */,
 				D8EB237F21E40F3200A31BA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8EB238C21E416B600A31BA8 /* Build configuration list for PBXNativeTarget "IntentHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8EB238D21E416B600A31BA8 /* Debug */,
+				D8EB238E21E416B600A31BA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
